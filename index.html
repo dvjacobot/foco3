@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Buscador Foco 3 (Jacobo de Vera)</title>
+
+    <script src="js/2019-06-12_songs.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-105267706-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
+</head>
+<body>
+<h1>Buscador Foco 3</h1>
+<h2><a href="http://www.jacobodevera.com/">Jacobo de Vera</a></h2>
+
+
+<div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+        Configuraci&oacute;n
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Configuraci&oacute;n</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="max-results" class="form-control-label">M&aacute;ximo n&uacute;mero de resultados:</label>
+                            <input type="text" class="form-control" id="max-results" value="300">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Canci&oacute;n</span>
+    <input id="song" type="text" class="form-control" placeholder="T&iacute;tulo o artista" aria-describedby="basic-addon1">
+</div>
+
+<div id="messages"></div>
+
+<ul id="songlist"></ul>
+
+<div id="footer"></div>
+
+</body>
+</html>
